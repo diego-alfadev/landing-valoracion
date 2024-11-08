@@ -1,0 +1,22 @@
+// div, nav, section, header {
+//     border: 1px solid red;
+// }
+
+.btn {
+    @apply font-bold py-2 px-4 rounded-lg bg-primary text-white hover:bg-primary-dark;
+}
+
+.section-title {
+    @apply mb-10 font-semibold text-2xl
+}
+
+body {
+    @apply [&::-webkit-scrollbar]:w-2
+    [&::-webkit-scrollbar-track]:rounded-full
+    [&::-webkit-scrollbar-track]:bg-gray-50
+    [&::-webkit-scrollbar-track]:opacity-0
+    [&::-webkit-scrollbar-thumb]:rounded-full
+    [&::-webkit-scrollbar-thumb]:bg-gray-300
+    dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+    dark:[&::-webkit-scrollbar-thumb]:bg-neutral-50
+}
