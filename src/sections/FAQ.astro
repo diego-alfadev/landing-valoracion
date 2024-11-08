@@ -1,0 +1,81 @@
+---
+const faqs = [
+  {
+    question: "¿Es un servicio gratuito?",
+    answer: "Sí, es un servicio completamente gratuito.",
+  },
+  {
+    question: "¿Cuánto tiempo tarda en llegar la valoración?",
+    answer:
+      "La valoración de tu inmueble estará en tu bandeja de entrada poco después de completar el cuestionario, de forma inmediata.",
+  },
+  {
+    question: "¿Es una valoración 100% precisa?",
+    answer:
+      "No, es una valoración estimada basada en la información que nos proporcionas. Si deseas una valoración precisa o crees que no hemos tenido en cuenta alguna particularidad del inmueble, te recomendamos que contactes con <a target='_blank' class='underline text-blue-500' href='https://nuevomilenio-inmo.com/quienes-somos'>uno de nuestros asesores</a>",
+  },
+];
+---
+
+<section class="w-full flex flex-col justify-center items-center p-10">
+  <h1 class="section-title">Preguntas frecuentes</h1>
+
+  <div class="w-full bg-white rounded-lg shadow-md">
+    <div class="hs-accordion-group">
+      {
+        faqs.map((faq) => (
+          <div class="hs-accordion" id={faq.question + "heading"}>
+            <button
+              class="hs-accordion-toggle hs-accordion-active:text-primary px-6 py-3 inline-flex items-center gap-x-3 text-lg w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none"
+              aria-expanded="true"
+              aria-controls="hs-basic-collapse-one"
+            >
+              <svg
+                class="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block size-4 text-gray-600 group-hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5v14" />
+              </svg>
+              <svg
+                class="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14" />
+              </svg>
+              {faq.question}
+            </button>
+            <div
+              id={faq.question + "content"}
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              role="region"
+              aria-labelledby={faq.question + "heading"}
+            >
+              <div class="pb-4 px-6">
+                <p class="text-md text-gray-600 " set:html={faq.answer}>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
