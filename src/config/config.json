@@ -1,0 +1,65 @@
+{
+    "site": {
+        "title": "Valoraciones Nuevo Milenio",
+        "description": "Valore su propiedad online de forma rápida y sencilla con Nuevo Milenio Inmobiliaria",
+        "base_url": "https://valoraciones.nuevomilenio-inmo.com",
+        "base_path": "/",
+        "favicon": "/favicon.ico",
+        "logo": "/images/nm/logo.png"
+    },
+    "nav": {
+        "title": "Home",
+        "home_action_url": "https://nuevomilenio-inmo.com",
+        "items": [
+            {
+                "label": "Comprar",
+                "url": "https://www.nuevomilenio-inmo.com/servicios-para-compradores",
+                "target": "_blank",
+                "icon": "home",
+                "alt": "Home"
+            },
+            {
+                "label": "Vender",
+                "url": "https://www.nuevomilenio-inmo.com/servicios-para-vendedores",
+                "target": "_blank",
+                "icon": "info",
+                "alt": "About"
+            },
+            {
+                "label": "Alquilar",
+                "url": "https://www.nuevomilenio-inmo.com/servicios-para-arrendadores",
+                "target": "_blank",
+                "icon": "contact",
+                "alt": "Contact"
+            }
+        ]
+    },
+    "presentation": {
+        "title": "¿No sabes cuánto vale tu casa?",
+        "subtitle": "¡Realiza una valoración online gratuita!",
+        "items": [
+            {
+                "image": "/images/carousel/carousel-1.webp",
+                "alt": "Imagen 1"
+            },
+            {
+                "image": "/images/carousel/carousel-2.webp",
+                "alt": "Imagen 2"
+            },
+            {
+                "image": "/images/carousel/carousel-3.webp",
+                "alt": "Imagen 3"
+            }
+        ]
+    },
+    "footer": {
+        "description": "Una herramienta de Nuevo Milenio Inmobiliaria",
+        "social": {
+            "facebook": "https://www.facebook.com/nuevomilenioinmo/?ref=ts",
+            "twitter": "https://twitter.com/milenioinmo",
+            "youtube": "https://www.youtube.com/channel/UCqyAAXGRQp8kzysU3UH2_7A/",
+            "instagram": "https://www.instagram.com/inmobiliarianuevomilenio/",
+            "linkedin": "https://www.linkedin.com/company/nuevo-milenio-inmobiliaria/"
+        }
+    }
+}
