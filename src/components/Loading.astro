@@ -1,0 +1,13 @@
+---
+export type LoadingProps = {
+  size?: number;
+  color?: string;
+};
+
+const { size = 4, color = "white" }: LoadingProps = Astro.props;
+---
+
+<span
+  class=`animate-spin inline-block size-${size} border-[3px] border-current border-t-transparent text-${color} rounded-full`
+  role="status"
+  aria-label="loading"></span>
