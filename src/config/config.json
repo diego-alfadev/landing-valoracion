@@ -2,8 +2,8 @@
     "site": {
         "title": "Valoraciones Nuevo Milenio",
         "description": "Valore su propiedad online de forma rápida y sencilla con Nuevo Milenio Inmobiliaria",
-        "base_url": "https://valoraciones.nuevomilenio-inmo.com",
-        "base_path": "/",
+        "host": "https://valoraciones.nuevomilenio-inmo.com",
+        "base": "/",
         "favicon": "/favicon.ico",
         "logo": "/images/nm/logo.png"
     },
@@ -39,27 +39,53 @@
         "subtitle": "¡Realiza una valoración online gratuita!",
         "items": [
             {
-                "image": "/images/carousel/carousel-1.webp",
+                "image": "/images/carousel/carousel-1_min.webp",
                 "alt": "Imagen 1"
             },
             {
-                "image": "/images/carousel/carousel-2.webp",
+                "image": "/images/carousel/carousel-2_min.webp",
                 "alt": "Imagen 2"
             },
             {
-                "image": "/images/carousel/carousel-3.webp",
+                "image": "/images/carousel/carousel-3_min.webp",
                 "alt": "Imagen 3"
             }
         ]
     },
+    "content_sections": [
+        {
+            "title": "¿Por qué realizar una valoración online?",
+            "content": {
+                "subtitle": "<ul style=\"justify-content: flex-end;\" class=\"flex\"><li class=\"hoverable-word\">Rápido</li><li class=\"hoverable-word\">Gratuito</li><li class=\"hoverable-word\">Sin Compromiso</li><li class=\"hoverable-word\">Seguro</li></ul>",
+                "images": [
+                    "https://picsum.photos/200/300",
+                    "https://picsum.photos/300/200",
+                    "https://picsum.photos/301/201",
+                    "https://picsum.photos/201/301"
+                ]
+            }
+        }
+    ],
     "footer": {
-        "description": "Una herramienta de Nuevo Milenio Inmobiliaria",
+        "description": "Una herramienta de",
+        "copyright": "© 2024 Milenium Inmobiliaria de Madrid",
+        "contact": {
+            "email": "info@nuevomilenio-inmo.com",
+            "phone": "91 689 03 03",
+            "whatsapp": {
+                "number": "+34 671 90 49 92",
+                "message": "Hola, quería realizar una consulta sobre las valoraciones de inmuebles online"
+            },
+            "address": "C/ Oslo, 5, 28922 Alcorcón, Madrid, Spain",
+            "schedule": "Lunes a Viernes:\r\n 10:30 a 14:00 / de 17:00 a 19:30\r\nSábados:\r\n 10:30 a 14:00"
+        },
         "social": {
             "facebook": "https://www.facebook.com/nuevomilenioinmo/?ref=ts",
             "twitter": "https://twitter.com/milenioinmo",
             "youtube": "https://www.youtube.com/channel/UCqyAAXGRQp8kzysU3UH2_7A/",
             "instagram": "https://www.instagram.com/inmobiliarianuevomilenio/",
-            "linkedin": "https://www.linkedin.com/company/nuevo-milenio-inmobiliaria/"
+            "linkedin": "https://www.linkedin.com/company/nuevo-milenio-inmobiliaria/",
+            "maps": "https://maps.app.goo.gl/eTBrXvP3YpdgNis27"
         }
     }
 }

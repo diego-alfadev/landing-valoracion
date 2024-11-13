@@ -4,10 +4,28 @@
 
 .btn {
     @apply font-bold py-2 px-4 rounded-lg bg-primary text-white hover:bg-primary-dark;
+    &-lg {
+        @apply font-bold rounded-xl bg-primary text-white hover:bg-primary-dark py-4 px-8 text-lg;
+    }
+    &-outline {
+        @apply font-bold py-2 px-4 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white;
+    }
+}
+
+.section {
+    @apply w-full flex flex-col justify-center items-center py-4  px-4 md:px-16;
 }
 
 .section-title {
-    @apply mb-10 font-semibold text-2xl
+    @apply mb-10 font-semibold text-3xl
+}
+
+.debug-border {
+    @apply border border-red-500;
+}
+
+.hoverable-word {
+    @apply ml-12 font-bold text-xl text-slate-400 hover:text-slate-700 hover:scale-125 hover:ml-14 hover:translate-y-2 transition-all;
 }
 
 body {

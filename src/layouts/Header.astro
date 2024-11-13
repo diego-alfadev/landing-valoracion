@@ -1,5 +1,4 @@
 ---
-import type { ConfigType } from "@/types/config.ts";
 import config from "@/config/config.json";
 import Logo from "@/components/Logo.astro";
 ---
@@ -78,13 +77,13 @@ import Logo from "@/components/Logo.astro";
       aria-labelledby="hs-navbar-example-collapse"
     >
       <div
-        class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5"
+        class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 text-center"
       >
         {
           config.nav.items.map((item) => (
             <a
-              class="text-gray-700 hover:text-gray-900 font-medium text-sm"
-              href="#"
+              class="text-sm btn-outline bg-white"
+              href={item.url}
               aria-current="page"
             >
               {item.label}

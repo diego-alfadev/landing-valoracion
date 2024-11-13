@@ -4,10 +4,19 @@ import Layout from '../layouts/Layout.astro';
 import config from '@/config/config.json';
 import HowTo from '@/sections/HowTo.astro';
 import FAQ from '@/sections/FAQ.astro';
+import ContentSection from '@/components/react/ContentSection';
+
 ---
 
 <Layout title={config.site.title}>
 	<Presentation />
 	<HowTo />
+	{
+		config.content_sections.map((section) => {
+			return (
+				<ContentSection client:load {...section} />
+			);
+		})
+	}
 	<FAQ />
 </Layout>
