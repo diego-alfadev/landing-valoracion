@@ -40,7 +40,7 @@ import config from "@/config/config.json";
 
             <div class="py-2 flex-1 ml-4">
               <a
-                class="text-gray-100 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400"
+                class="text-gray-300 hover:text-gray-100 focus:outline-none focus:text-gray-200"
                 href="tel:911234567">{config.footer.contact.phone}</a
               >
             </div>
@@ -60,7 +60,7 @@ import config from "@/config/config.json";
 
             <div class="py-2 flex-1 ml-4">
               <a
-                class="text-gray-100 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400"
+                class="text-gray-300 hover:text-gray-100 focus:outline-none focus:text-gray-200"
                 target="_blank"
                 href=`https://wa.me/${config.footer.contact.whatsapp.number.replaceAll(' ', '')}?text=${encodeURIComponent(config.footer.contact.whatsapp.message)}`
                 >{config.footer.contact.whatsapp.number}</a
@@ -82,7 +82,7 @@ import config from "@/config/config.json";
 
             <div class="py-2 flex-1 ml-4">
               <a
-                class="text-gray-100 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400"
+                class="text-gray-300 hover:text-gray-100 focus:outline-none focus:text-gray-200"
                 href={`mailto:${config.footer.contact.email}`}
               >
                 {config.footer.contact.email}
@@ -106,7 +106,7 @@ import config from "@/config/config.json";
               <a
                 href={`https://www.google.com/maps/dir//${encodeURIComponent(config.footer.contact.address)}`}
                 target="_blank"
-                class="text-gray-100 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400"
+                class="text-gray-300 hover:text-gray-100 focus:outline-none focus:text-gray-200"
               >
                 {config.footer.contact.address}
               </a>
