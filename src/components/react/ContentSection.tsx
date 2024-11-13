@@ -106,7 +106,7 @@ function ContentSection(props: ContentSectionProps) {
                                             duration: 5,
                                             delay: i * 0.1
                                         }
-                                    }} className={`rounded-xl shadow-md shadow-gray-500 w-auto h-auto object-cover ${self} ${justify} ${bg}`}>
+                                    }} className={`rounded-full shadow-md shadow-gray-500 w-auto h-auto object-cover ${self} ${justify} ${bg}`}>
                                         <p className="text-base md:text-2xl font-bold text-white p-4">{word}</p>
                                     </motion.div>
 
