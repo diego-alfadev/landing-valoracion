@@ -27,14 +27,14 @@ function ContentSection(props: ContentSectionProps) {
 
     const infinityPoints = generateInfinityPathPoints(50, 5, 5);
     const floatingPoints = infinityPoints.map(point => `translateX(${point.x}px) translateY(${point.y}px)`);
-    console.log(floatingPoints)
+    // console.log(floatingPoints)
 
 
 
 
 
     return (
-        <section className="w-full flex flex-col justify-center items-center py-4 px-16">
+        <section className="section">
 
 
             <div className={"flex flex-col gap-8 w-full " + (props.orientation === 'rtl' ? 'md:flex-row-reverse' : 'md:flex-row')}>
@@ -107,7 +107,7 @@ function ContentSection(props: ContentSectionProps) {
                                             delay: i * 0.1
                                         }
                                     }} className={`rounded-xl shadow-md shadow-gray-500 w-auto h-auto object-cover ${self} ${justify} ${bg}`}>
-                                        <p className="text-3xl font-bold text-white p-4">{word}</p>
+                                        <p className="text-base md:text-2xl font-bold text-white p-4">{word}</p>
                                     </motion.div>
 
                                 </div>

@@ -39,7 +39,7 @@ const itemVariants: Variants  = {
 
 function Steps({ steps }: StepsProps) {
     return (
-        <motion.ul className="relative flex flex-col sm:flex-row gap-8" variants={containerVariants} initial="hidden" animate="visible">
+        <motion.ul className="relative flex flex-col sm:flex-row gap-1 md:gap-8" variants={containerVariants} initial="hidden" animate="visible">
             {
                 steps.map((step, i) => (
                     <motion.li
