@@ -56,12 +56,12 @@
         {
             "title": "¿Por qué realizar una valoración online?",
             "content": {
-                "subtitle": "<ul style=\"justify-content: flex-end;\" class=\"flex\"><li class=\"hoverable-word\">Rápido</li><li class=\"hoverable-word\">Gratuito</li><li class=\"hoverable-word\">Sin Compromiso</li><li class=\"hoverable-word\">Seguro</li></ul>",
-                "images": [
-                    "https://picsum.photos/200/300",
-                    "https://picsum.photos/300/200",
-                    "https://picsum.photos/301/201",
-                    "https://picsum.photos/201/301"
+                "subtitle": "Si quieres vender o alquilar tu propiedad, es importante conocer su valor real. Con nuestra herramienta de valoración online, podrás obtener una estimación rápida y ajustada a mercado.",
+                "words": [
+                    "Rápido",
+                    "Gratuito",
+                    "Sin Compromiso",
+                    "Seguro"
                 ]
             }
         }

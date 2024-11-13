@@ -7,6 +7,7 @@ type ContentSectionProps = {
     content: {
         subtitle?: string
         images?: string[] | { src: string, alt: string }[]
+        words?: string[]
     }
 }
 // Función para generar puntos de la curva de Lissajous en forma de infinito
@@ -44,15 +45,12 @@ function ContentSection(props: ContentSectionProps) {
                 <div className="flex-1">
 
                     <div className="grid grid-rows-2 grid-cols-2">
-                        {props.content.images?.map((image, i) => {
+                        {/* {props.content.images?.map((image, i) => {
 
                             const src = typeof image === 'string' ? image : image.src
                             const alt = typeof image === 'string' ? undefined : image.alt
                             const self = i % 2 === 0 ? 'self-start' : 'self-end'
                             const justify = i < 2 ? 'justify-end' : 'justify-start'
-
-                            const transformX = i % 2 === 0 ? 'translate-x-4' : '-translate-x-4'
-                            const transformY = i < 2 ? 'translate-y-4' : '-translate-y-4'
 
                             const randomStartIndex = Math.floor(Math.random() * infinityPoints.length)
 
@@ -84,7 +82,42 @@ function ContentSection(props: ContentSectionProps) {
 
                             )
 
+                        })} */}
+                        {props.content.words?.map((word, i) => {
+
+                            const self = i >= 2 ? 'self-start' : 'self-end'
+                            const justify = i % 2 === 0 ? 'justify-end' : 'justify-start'
+                            const bg = i % 3 === 0 ? 'bg-primary' : 'bg-primary-dark'
+                            const randomStartIndex = Math.floor(Math.random() * infinityPoints.length)
+                            const floatingPointsAtRandomStart = []
+
+                            for (let j = 0; j < infinityPoints.length; j++) {
+                                floatingPointsAtRandomStart.push(floatingPoints[(randomStartIndex + j) % floatingPoints.length])
+                            }
+
+                            return (
+                                <div className={`flex ${justify} items-center p-1`}>
+                                    <motion.div animate={{
+                                        transform: floatingPointsAtRandomStart,
+                                        transition: {
+                                            repeat: Infinity,
+                                            repeatType: 'loop',
+                                            ease: 'linear',
+                                            duration: 5,
+                                            delay: i * 0.1
+                                        }
+                                    }} className={`rounded-xl shadow-md shadow-gray-500 w-auto h-auto object-cover ${self} ${justify} ${bg}`}>
+                                        <p className="text-3xl font-bold text-white p-4">{word}</p>
+                                    </motion.div>
+
+                                </div>
+
+
+
+                            )
+
                         })}
+
 
 
 
