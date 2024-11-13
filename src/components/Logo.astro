@@ -1,10 +1,10 @@
 ---
 import config from "@/config/config.json";
 import { Image } from "astro:assets";
-const { src, text, width, height } = Astro.props;
+const { src, text, width, height, href } = Astro.props;
 const {
   logo,
-  title,
+  title
 }: {
   logo: string;
   title: string;
@@ -23,7 +23,7 @@ if (_width && !_height) {
 
 ---
 
-<a href="/" class="navbar-brand block">
+<a href={href ?? '/'} class="navbar-brand block">
   {
     src || logo ? (
       <Image
