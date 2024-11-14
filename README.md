@@ -10,7 +10,7 @@ Página web estática creada con astro: `npm create astro@latest --template basi
 
 Construida para [Nuevo Milenio Inmobiliaria](https://nuevomilenio-inmo.com)
 
-Hosteada [Aquí](https://valora-tu-inmueble.nuevomilenio-inmo.com)
+Hosteada [Aquí](https://valoraciones.nuevomilenio-inmo.com)
 
 
 ## Estructura del proyecto
