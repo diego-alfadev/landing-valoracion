@@ -7,7 +7,7 @@ import config from "@/config/config.json";
 interface Props {
   title: string;
 }
-
+const GTAG = import.meta.env.GTAG_ID
 const { title } = Astro.props;
 ---
 
@@ -17,6 +17,17 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content={config.site.description} />
     <meta name="viewport" content="width=device-width" />
+    <!-- Google tag (gtag.js) -->
+    <script async src={"https://www.googletagmanager.com/gtag/js?id="+GTAG}></script>
+    <script type="text/javascript" define:vars={{GTAG}}>
+      // Pasamos la variable GTAG_ID al navegador como una variable global
+      console.log(GTAG);
+      window.GTAG_ID = GTAG;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', window.GTAG_ID);
+    </script>
 	<meta name="theme-color" content="#202125">
     <!-- responsive meta -->
     <meta
