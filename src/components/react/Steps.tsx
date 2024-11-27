@@ -28,12 +28,12 @@ const itemVariants: Variants  = {
     hidden: {
         opacity: 0,
         scale: 0.5,
-        transform: 'translateX(-200px) translateY(150px) rotate(30deg)',
+        transform: 'translateX(-200px)',
     },
     visible: {
         opacity: 1,
         scale: 1,
-        transform: 'translateX(0px) translateY(0px) rotate(0deg)',
+        transform: 'translateX(0px)',
     }
 }
 

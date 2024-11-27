@@ -39,15 +39,23 @@
         "subtitle": "¡Realiza una valoración online gratuita!",
         "items": [
             {
-                "image": "/images/carousel/carousel-1_min.webp",
+                "image": "/images/carousel/carousel-alcorcon-1.webp",
                 "alt": "Imagen 1"
             },
             {
-                "image": "/images/carousel/carousel-2_min.webp",
+                "image": "/images/carousel/carousel-alcorcon-2.webp",
                 "alt": "Imagen 2"
             },
             {
-                "image": "/images/carousel/carousel-3_min.webp",
+                "image": "/images/carousel/carousel-alcorcon-3.webp",
+                "alt": "Imagen 3"
+            },
+            {
+                "image": "/images/carousel/carousel-alcorcon-4.webp",
+                "alt": "Imagen 3"
+            },
+            {
+                "image": "/images/carousel/carousel-alcorcon-5.webp",
                 "alt": "Imagen 3"
             }
         ]
